@@ -4,25 +4,16 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94201dd3-dd7d-4faf-b4b3-976f82da6b3b" name="Changes" comment="a">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agent/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agent/correction_params.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agent/corrector.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agent/java_analyzer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agent/llm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agent/prompts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agent/report_generator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/web.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/outputs/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/.gitkeep" afterDir="false" />
+    <list default="true" id="94201dd3-dd7d-4faf-b4b3-976f82da6b3b" name="Changes" comment="README ATUALIZADO">
+      <change afterPath="$PROJECT_DIR$/agent/annotated_file_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agent/historico.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/corrector.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/corrector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/llm.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/llm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/prompts.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/prompts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/report_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/report_generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/web.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/web.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,64 +32,65 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/agent/corrector.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/interface/web.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0000000025412918" />
-      <entry key="S10" value="1.0001004313448028" />
-      <entry key="S30" value="1.2598636215239587" />
-      <entry key="S60" value="3.173235233712766" />
-      <entry key="M2" value="7.494918075110351" />
-      <entry key="M5" value="13.705463084581844" />
-      <entry key="M10" value="16.989519356105355" />
-      <entry key="M15" value="18.33808895579064" />
-      <entry key="M30" value="19.93262904662077" />
-      <entry key="H1" value="20.883802408721102" />
-      <entry key="H2" value="21.41706689381143" />
-      <entry key="H4" value="21.701688885649304" />
-      <entry key="D1" value="21.949270771968738" />
-      <entry key="W1" value="21.992727387155398" />
+      <entry key="MS100" value="1.002340242887035" />
+      <entry key="MS500" value="1.4228388251871045" />
+      <entry key="S2" value="3.0429129279405855" />
+      <entry key="S5" value="4.0275720251480145" />
+      <entry key="S10" value="4.474308881540848" />
+      <entry key="S30" value="4.815823711065383" />
+      <entry key="S60" value="4.987200163050751" />
+      <entry key="M2" value="5.806209349749559" />
+      <entry key="M5" value="8.520373576871462" />
+      <entry key="M10" value="11.399145598308573" />
+      <entry key="M15" value="14.226743251985393" />
+      <entry key="M30" value="22.510844040949028" />
+      <entry key="H1" value="32.89665421399958" />
+      <entry key="H2" value="41.54988568634276" />
+      <entry key="H4" value="47.203380563942716" />
+      <entry key="D1" value="52.77789825175404" />
+      <entry key="W1" value="53.82308296972433" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="8.258882740203892E-112" />
-      <entry key="S2" value="1.6952366188429354E-28" />
-      <entry key="S5" value="7.792774873025027E-12" />
-      <entry key="S10" value="2.791554203848643E-6" />
-      <entry key="S30" value="0.014080411751381507" />
-      <entry key="S60" value="0.1186609107978761" />
-      <entry key="M2" value="0.34447193034828844" />
-      <entry key="M5" value="0.6529223506461148" />
-      <entry key="M10" value="0.8080361072663245" />
-      <entry key="M15" value="0.8675353464251946" />
-      <entry key="M30" value="0.9314157752718141" />
-      <entry key="H1" value="0.9650988422290298" />
-      <entry key="H2" value="0.9823944433011773" />
-      <entry key="H4" value="0.9911581323387187" />
-      <entry key="D1" value="0.9985208967984678" />
-      <entry key="W1" value="0.9997885654762152" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="4.99670337348252E-259" />
+      <entry key="S10" value="7.068736360540353E-130" />
+      <entry key="S30" value="8.908007925569317E-44" />
+      <entry key="S60" value="2.984628607644394E-22" />
+      <entry key="M2" value="1.7276077701968087E-11" />
+      <entry key="M5" value="4.954251613312536E-5" />
+      <entry key="M10" value="0.00703864448122829" />
+      <entry key="M15" value="0.03672761155255758" />
+      <entry key="M30" value="0.1916444926225577" />
+      <entry key="H1" value="0.43777219260998945" />
+      <entry key="H2" value="0.661643554045522" />
+      <entry key="H4" value="0.813414749095147" />
+      <entry key="D1" value="0.9661665713698597" />
+      <entry key="W1" value="0.9950950650302589" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9395227492140118" />
-      <entry key="MS500" value="0.9876008614453725" />
-      <entry key="S2" value="0.9968856972203758" />
-      <entry key="S5" value="0.9987531153200717" />
-      <entry key="S10" value="0.9994746781045105" />
-      <entry key="S30" value="1.271886591388182" />
-      <entry key="S60" value="3.2861402822581205" />
-      <entry key="M2" value="7.832250339069082" />
-      <entry key="M5" value="14.353412010583368" />
-      <entry key="M10" value="17.79455118381767" />
-      <entry key="M15" value="19.203484065673017" />
-      <entry key="M30" value="20.862894909877014" />
-      <entry key="H1" value="21.84830281182615" />
-      <entry key="H2" value="22.399155577529186" />
-      <entry key="H4" value="22.692692398344935" />
-      <entry key="D1" value="22.947765647058382" />
-      <entry key="W1" value="22.992512228937702" />
+      <entry key="MS100" value="0.9681966276161661" />
+      <entry key="MS500" value="1.3965876654260094" />
+      <entry key="S2" value="2.9910291878647923" />
+      <entry key="S5" value="3.9944318041278555" />
+      <entry key="S10" value="4.4549065882837375" />
+      <entry key="S30" value="4.808635596952141" />
+      <entry key="S60" value="4.983492502603643" />
+      <entry key="M2" value="5.804247687081775" />
+      <entry key="M5" value="8.519516802714753" />
+      <entry key="M10" value="11.405651370401399" />
+      <entry key="M15" value="14.263019697032046" />
+      <entry key="M30" value="22.70205094778104" />
+      <entry key="H1" value="33.33404538341853" />
+      <entry key="H2" value="42.21126538428573" />
+      <entry key="H4" value="48.01663852356259" />
+      <entry key="D1" value="53.7440345168447" />
+      <entry key="W1" value="54.81817359224742" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -130,7 +122,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -150,7 +142,9 @@
       <option name="presentableId" value="Default" />
       <updated>1780687316718</updated>
       <workItem from="1780687317739" duration="2990000" />
-      <workItem from="1780691166494" duration="2306000" />
+      <workItem from="1780691166494" duration="5823000" />
+      <workItem from="1780724899043" duration="369000" />
+      <workItem from="1780727515836" duration="1797000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <option name="closed" value="true" />
@@ -160,15 +154,58 @@
       <option name="project" value="LOCAL" />
       <updated>1780687439233</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Versão sem ter como baixar">
+      <option name="closed" value="true" />
+      <created>1780693537997</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1780693537997</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Versão sem ter como baixar">
+      <option name="closed" value="true" />
+      <created>1780693546695</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1780693546695</updated>
+    </task>
+    <task id="LOCAL-00004" summary="README ATUALIZADO">
+      <option name="closed" value="true" />
+      <created>1780696866794</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1780696866794</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="a" />
-    <option name="LAST_COMMIT_MESSAGE" value="a" />
+    <MESSAGE value="Versão sem ter como baixar" />
+    <MESSAGE value="README ATUALIZADO" />
+    <option name="LAST_COMMIT_MESSAGE" value="README ATUALIZADO" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/agente_corretor_poo$llm.coverage" NAME="llm Coverage Results" MODIFIED="1780690180654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/agent" />

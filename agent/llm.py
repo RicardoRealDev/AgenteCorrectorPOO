@@ -14,7 +14,10 @@ class OllamaLLM:
         try:
             response = chat(
                 model=self.model,
-                messages=messages
+                messages=messages,
+                options={
+                    "temperature": 0.1
+                }
             )
 
             return response["message"]["content"]

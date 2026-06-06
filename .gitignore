@@ -1,8 +1,27 @@
+# Ambiente virtual
+.venv/
 venv/
+
+# Cache Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+# Configurações locais
 .env
-uploads/*
+
+# PyCharm
+.idea/
+
+# Arquivos gerados pelo sistema
 outputs/*
-!uploads/.gitkeep
+uploads/*
+
+# Manter as pastas no Git
 !outputs/.gitkeep
+!uploads/.gitkeep
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
